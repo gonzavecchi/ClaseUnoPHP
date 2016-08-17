@@ -18,7 +18,7 @@ $Numero = 10;
 
 
 
-$vueltas = 10;
+$vueltas = 100000;
 
 $i = 0;
 $pares = 0;
@@ -67,7 +67,10 @@ while ( $i < $vueltas)
 			$c6 ++;
 			break;
 		case '7':
-			$c7 ++;
+		    if (($c7/$vueltas)*100 > 5) {
+		    	continue;
+		    }
+		    else{$c7 ++;}			
 			break;
 		case '8':
 			$c8 ++;
@@ -87,19 +90,32 @@ while ( $i < $vueltas)
 	//echo "Random $random <br>";
 		$i ++;
 }
-	
-echo "Pares: $pares <br>";
-echo "Impares: $impares <br>";
-echo "El número 1 salió: $c1 <br>";
-echo "El número 2 salió: $c2 <br>";
-echo "El número 3 salió: $c3 <br>";
-echo "El número 4 salió: $c4 <br>";
-echo "El número 5 salió: $c5 <br>";
-echo "El número 6 salió: $c6 <br>";
-echo "El número 7 salió: $c7 <br>";
-echo "El número 8 salió: $c8 <br>";
-echo "El número 9 salió: $c9 <br>";
-echo "El número 10 salió: $c10 <br>";
+
+
+$c1 = ($c1/$vueltas)*100;
+$c2 = ($c2/$vueltas)*100;
+$c3 = ($c3/$vueltas)*100;
+$c4 = ($c4/$vueltas)*100;
+$c5 = ($c5/$vueltas)*100;
+$c6 = ($c6/$vueltas)*100;
+$c7 = ($c7/$vueltas)*100;
+$c8 = ($c8/$vueltas)*100;
+$c9 = ($c9/$vueltas)*100;
+$c10 = ($c10/$vueltas)*100;
+
+
+echo "Pares: $pares";
+echo "<br>Impares: $impares";
+echo "<br>El número 1 salió: $c1%";
+echo "<br>El número 2 salió: $c2%";
+echo "<br>El número 3 salió: $c3%";
+echo "<br>El número 4 salió: $c4%";
+echo "<br>El número 5 salió: $c5%";
+echo "<br>El número 6 salió: $c6%";
+echo "<br>El número 7 salió: $c7%";
+echo "<br>El número 8 salió: $c8%";
+echo "<br>El número 9 salió: $c9%";
+echo "<br>El número 10 salió: $c10%";
 
 
 //echo "Random $random"
