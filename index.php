@@ -6,6 +6,8 @@
 <H1>Hola Mundo</H1>
 <?PHP
 
+echo "Prueba de instalación local <br>";
+
 //echo "Hola PHP";
 //echo "<H2> Hola PHP <H2>";
 
