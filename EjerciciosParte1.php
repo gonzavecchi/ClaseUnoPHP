@@ -152,5 +152,7 @@ foreach($lapicera as $x_value)
 
 ?>
 
+
+
 </body>
 </html>

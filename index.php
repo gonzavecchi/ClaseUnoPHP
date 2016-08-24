@@ -6,6 +6,18 @@
 <H1>Hola Mundo</H1>
 <?PHP
 
+require 'ClasePrueba.php';
+
+
+$Ejemplo = new ClasePrueba();
+
+echo "<br><br>Prueba<br>";
+$Ejemplo->writeMsg();
+echo "<br><br>Prueba<br>";
+
+
+echo "----------------------<br>";
+
 echo "Prueba de instalación local <br>";
 
 //echo "Hola PHP";
