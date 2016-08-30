@@ -8,7 +8,7 @@ class ClasePrueba
 	
 	function ClasePrueba()
 	{
-		 $this->prueba = "Hola Mundo";
+		 $this->prueba = "Hola Mundo!!!";
 	}
 
 	function writeMsg() {
